@@ -1,4 +1,5 @@
 # Microsoft Stock Time-Series Analysis
+![microsoft_logo](Images/microsoft_logo_03.jpeg)
 
 ## Overview
 
@@ -10,18 +11,17 @@ Investors, such as day traders and short-term investors, are actively involved i
 
 ## Data Understanding and Analysis
 
-The dataset was obtained from Yahoo Finance and it consists of the date, opening price, maximum price, minimum price, closing price, adjusted closing price, and volume of the Microsoft stock. The data had been obtained from March 13, 1986 to December 26, 2023. The observations are collected during weekdays and not on weekends in accordance to the opening and closing of the New York Stock Exchange (NYSE). The dataset had 9524 observations.
+The dataset was obtained from Yahoo! Finance and it consists of the date, opening price, maximum price, minimum price, closing price, adjusted closing price, and volume of the Microsoft stock. The data had been obtained from March 13, 1986 to December 26, 2023. The observations are collected during weekdays and not on weekends in accordance to the opening and closing of the New York Stock Exchange (NYSE). The dataset had 9524 observations.
 
 We were concerned only with the closing stock price. Therefore, the master dataset was a Series that consisted of the date, which was used as index, and the closing price.
 
 ![MSFT_stock_price](Images/MSFT_close_price.png)
 
-Looking at MSFT Closing Stock Price vs Date graph, we can see an upward trend in the last 9 years. Through the eye test, we can see that the data is not stationary. This was confirmed with a P-Value of 1.00 when Dickey-Fuller test was done.
+Through the eye test, we can see that the data is not stationary. This was confirmed with a P-Value of 1.00 when Dickey-Fuller test was done.
 
 ![seasonal_decomposition](Images/trend.png)
 
-Looking at these graphs, we can see the upward trend of MSFT stock price in the past 9 years. This year alone, MSFT stock price rose 55% under the leadership of CNN Business' CEO of the year, Satya Nadella.
-
+Looking closely at the trend, we can see the upward trajectory of MSFT stock price in the past 9 years. This year alone, MSFT stock price rose 55% under the leadership of CNN Business' CEO of the year, Satya Nadella.
 
 
 ## Modeling
@@ -30,26 +30,32 @@ Looking at these graphs, we can see the upward trend of MSFT stock price in the 
 
 Naive model is done based on our current data shifted by one step. In other words, we used values from last observation to forecast our future predictions.
 
-### ARIMA Model
-
-
-### Random Walk Model
+![naive_model](Images/Naive_model.png)
 
 
 ### LSTM Model
+
+LSTM model utilizes neural network to make stock predictions.
+
+![LSTM Model](Images/LSTM_model.png)
+
+Upon evaluation, the MSE of the Training and Test set were 21 and 35, respectively, which was an indication that this model is a good predictor.
 
 ## Recommendations
 
 - **Upward Trend**
 
-Based on our analysis, MSFT stock price has an upward trend since 2016, which 
+Based on our analysis, MSFT stock price has an upward trend since 2016, which is beneficial for long-term investments.
 
-- **LSTM MOdel Predictions**
+- **LSTM Model Predictions**
 
+Utilizing LSTM neural network, we can forecast future stock price with confidence.
 
 ## Future Insights
 
 - **External Factors**
+
+Stock prices are dependent upon factors outside the stock exchange. It is therefore crucial to include current events and other factors in predicting 
 
 - **Real-Time Forecasting**
 
@@ -58,14 +64,24 @@ For day traders, decisions need to be made on site and in real-time. Therefore, 
 - **Enhancing Model Robustness**
 
 
+
 ## Outside Research
+
+- [Microsoft Corporation](https://www.britannica.com/topic/Microsoft-Corporation)
+
 - [Microsoft’s Satya Nadella is CNN Business’ CEO of the Year](https://www.cnn.com/2023/12/26/tech/satya-nadella-ceo-of-the-year/index.html)
+
+- [Apple - 43 Year Stock Price History | AAPL](https://www.macrotrends.net/stocks/charts/AAPL/apple/stock-price-history)
 
 - 
 
 ## Appendix
 
+
+
 ## Repository Structure
+
+You are in the README.md. 'Surprise_Movie_Recc_System.ipynb' contains the jupyter notebook that explains our data science steps for you to replicate. The python file 'web_app.py' contains the recommendation system code to be deployed with Streamlit. 'Movie Recommendation System.pdf' contains our presentation slides that sums up important information for our audience. In 'Data' you will be able to see the datasets we worked with. Likewise, 'Images' will contain images used.
 
 ```bash
 
