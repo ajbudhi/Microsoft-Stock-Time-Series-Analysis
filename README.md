@@ -43,6 +43,10 @@ Upon evaluation, the MSE of the Training and Test set were 21 and 35, respective
 
 ## Recommendations
 
+- **Positive Market Perception**
+
+Higher stock price proves that the market has high confidence in Microsoft.
+
 - **Upward Trend**
 
 Based on our analysis, MSFT stock price has an upward trend since 2016, which is beneficial for long-term investments.
@@ -63,7 +67,7 @@ For day traders, decisions need to be made on site and in real-time. Therefore, 
 
 - **Enhancing Model Robustness**
 
-
+All model needs to be tuned every now and then, and for robustness of the model, we need to enhance it by feeding it more data as it comes in.
 
 ## Outside Research
 
@@ -73,15 +77,14 @@ For day traders, decisions need to be made on site and in real-time. Therefore, 
 
 - [Apple - 43 Year Stock Price History | AAPL](https://www.macrotrends.net/stocks/charts/AAPL/apple/stock-price-history)
 
-- 
-
 ## Appendix
 
+The complete analysis can be found in the <a href="microsoft_stock_analysis.ipynb">Jupyter Notebook</a> and in our <a href="Microsoft_Stock_Time_Series_Analysis.pdf">presentation</a>.
 
 
 ## Repository Structure
 
-You are in the README.md. 'Surprise_Movie_Recc_System.ipynb' contains the jupyter notebook that explains our data science steps for you to replicate. The python file 'web_app.py' contains the recommendation system code to be deployed with Streamlit. 'Movie Recommendation System.pdf' contains our presentation slides that sums up important information for our audience. In 'Data' you will be able to see the datasets we worked with. Likewise, 'Images' will contain images used.
+You are in the README.md. 'microsoft_stock_analysis.ipynb' contains the jupyter notebook that explains our data science steps for you to replicate. 'Microsoft_Stock_Time_Series_Analysis.pdf' contains our presentation slides that sums up important information for our audience. In 'Data' you will be able to see the datasets we worked with. Likewise, 'Images' will contain images used.
 
 ```bash
 
