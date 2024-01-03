@@ -1,10 +1,6 @@
 # Microsoft Stock Time-Series Analysis
 ![microsoft_logo](Images/microsoft_logo_03.jpeg)
 
-## Overview
-
-
-
 ## Business Problem
 
 Investors, such as day traders and short-term investors, are actively involved in stock trading. They are interested in making informed trading decisions to capitalize on short-term price movements. Our challenge is to develop a predictive model that can forecast the direction of Microsoft stock prices over the next trading day.
