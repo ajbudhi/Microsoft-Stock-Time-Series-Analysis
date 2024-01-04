@@ -7,7 +7,12 @@ Investors, such as day traders and short-term investors, are actively involved i
 
 ## Data Understanding and Analysis
 
-The dataset was obtained from Yahoo! Finance and it consists of the date, opening price, maximum price, minimum price, closing price, adjusted closing price, and volume of the Microsoft stock. The data had been obtained from March 13, 1986 to December 26, 2023. The observations are collected during weekdays and not on weekends in accordance to the opening and closing of the New York Stock Exchange (NYSE). The dataset had 9524 observations.
+The dataset was obtained from Yahoo! Finance and it consists of the date, opening price, maximum price, minimum price, closing price, adjusted closing price, and volume of the Microsoft stock. The data had been obtained from March 13, 1986 to December 26, 2023. The dataset had 9524 observations.
+
+Data limitations:
+- No weekend observations.
+- Sentiment affect stock prices.
+
 
 We were concerned only with the closing stock price. Therefore, the master dataset was a Series that consisted of the date, which was used as index, and the closing price.
 
@@ -17,7 +22,7 @@ Through the eye test, we can see that the data is not stationary. This was confi
 
 ![seasonal_decomposition](Images/trend.png)
 
-Looking closely at the trend, we can see the upward trajectory of MSFT stock price in the past 9 years. This year alone, MSFT stock price rose 55% under the leadership of CNN Business' CEO of the year, Satya Nadella.
+Looking closely at the trend, we can see the upward trajectory of MSFT stock price in the past 7 years. This year alone, MSFT stock price rose 55% under the leadership of CNN Business' CEO of the year, Satya Nadella.
 
 
 ## Modeling
@@ -35,7 +40,7 @@ LSTM model utilizes neural network to make stock predictions.
 
 ![LSTM Model](Images/LSTM_model.png)
 
-Upon evaluation, the MSE of the Training and Test set were 21 and 35, respectively, which was an indication that this model is a good predictor.
+Upon evaluation, the RMSE of the Training and Test set were 21 and 35, respectively, which was an indication that this model is a good predictor.
 
 ## Recommendations
 
@@ -72,6 +77,8 @@ All model needs to be tuned every now and then, and for robustness of the model,
 - [Microsoft’s Satya Nadella is CNN Business’ CEO of the Year](https://www.cnn.com/2023/12/26/tech/satya-nadella-ceo-of-the-year/index.html)
 
 - [Apple - 43 Year Stock Price History | AAPL](https://www.macrotrends.net/stocks/charts/AAPL/apple/stock-price-history)
+
+- [Microsoft doubles down on cloud as growth softens amid inflation](https://www.spglobal.com/marketintelligence/en/news-insights/latest-news-headlines/microsoft-doubles-down-on-cloud-as-growth-softens-amid-inflation-72609572)
 
 ## Appendix
 
