@@ -66,9 +66,9 @@ Stock prices are dependent upon factors outside the stock exchange. It is theref
 
 For day traders, decisions need to be made on site and in real-time. Therefore, further research needs to be done for an application to give them forecasting in real-time to make decisions at the moment.
 
-- **Enhancing Model Robustness**
+- **Sentiment Analysis**
 
-All model needs to be tuned every now and then, and for robustness of the model, we need to enhance it by feeding it more data as it comes in.
+The stock market price is affected by current events and the sentiment spread through social media. It is worth to research the role of Sentiment Analysis in predicting stock market prices.
 
 ## Outside Research
 
